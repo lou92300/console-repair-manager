@@ -89,7 +89,13 @@ class RepairDatabase {
                 panne: row.panne,
                 prix: row.prix,
                 dateDeRendu: row.dateDeRendu,
-                initialResponsable: row.initialResponsable
+                initialResponsable: row.initialResponsable,
+                statut: row.statut || 'en_attente',
+                dateChangementStatut: row.dateChangementStatut,
+                commentaireFinal: row.commentaireFinal,
+                factureEnvoyee: row.factureEnvoyee || false,
+                dateEnvoiFacture: row.dateEnvoiFacture,
+                numeroFacture: row.numeroFacture
             }));
         } catch (error) {
             console.error('❌ Erreur lors de la récupération des réparations:', error);
@@ -117,7 +123,13 @@ class RepairDatabase {
                 panne: row.panne,
                 prix: row.prix,
                 dateDeRendu: row.dateDeRendu,
-                initialResponsable: row.initialResponsable
+                initialResponsable: row.initialResponsable,
+                statut: row.statut || 'en_attente',
+                dateChangementStatut: row.dateChangementStatut,
+                commentaireFinal: row.commentaireFinal,
+                factureEnvoyee: row.factureEnvoyee || false,
+                dateEnvoiFacture: row.dateEnvoiFacture,
+                numeroFacture: row.numeroFacture
             };
         } catch (error) {
             console.error('❌ Erreur lors de la récupération de la réparation:', error);
@@ -189,7 +201,13 @@ class RepairDatabase {
                 panne: row.panne,
                 prix: row.prix,
                 dateDeRendu: row.dateDeRendu,
-                initialResponsable: row.initialResponsable
+                initialResponsable: row.initialResponsable,
+                statut: row.statut || 'en_attente',
+                dateChangementStatut: row.dateChangementStatut,
+                commentaireFinal: row.commentaireFinal,
+                factureEnvoyee: row.factureEnvoyee || false,
+                dateEnvoiFacture: row.dateEnvoiFacture,
+                numeroFacture: row.numeroFacture
             }));
         } catch (error) {
             console.error('❌ Erreur lors de la recherche:', error);

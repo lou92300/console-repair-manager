@@ -1,4 +1,5 @@
 import { Repair } from '../types';
+import AuthService from './authService';
 
 const API_BASE_URL = 'http://localhost:3001/api';
 
