@@ -1,0 +1,51 @@
+# Dépendances
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+
+# Variables d'environnement (IMPORTANT - sécurité)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Base de données locale et sauvegardes
+repairs.json
+backups/
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.parcel-cache/
+.vscode/
+.DS_Store
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# PM2
+.pm2/
+ecosystem.config.js
+
+# Clés de sécurité
+keys/
+*.key
+*.pem
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Test coverage
+coverage/
